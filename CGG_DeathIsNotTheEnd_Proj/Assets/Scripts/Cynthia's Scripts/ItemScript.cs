@@ -17,6 +17,14 @@ public class ItemScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if(itemsCollected >= itemsTotal)
+        {
+            Debug.Log("You have collected all the items");
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Collectable"))
