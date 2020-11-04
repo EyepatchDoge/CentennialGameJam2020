@@ -553,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345747299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.85, y: 12.78, z: -1.1801286}
+  m_LocalPosition: {x: -12.9699955, y: 12.78, z: -1.1801286}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 517964838}
@@ -1235,6 +1235,7 @@ GameObject:
   - component: {fileID: 659570599}
   - component: {fileID: 659570598}
   - component: {fileID: 659570597}
+  - component: {fileID: 659570600}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -1259,7 +1260,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.48, y: 20.34}
+    oldSize: {x: 20.48, y: 20.48}
     newSize: {x: 452.48, y: 33.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -1333,6 +1334,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &659570600
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659570596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba74fbbe44d7c144cadf6b0318d4f3aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &665586238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,9 +2655,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 5eb932da1747ed34cb5d79a741bbc244, type: 3}
     - target: {fileID: 3449208447053408673, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: storyText
-      value: "Well that sounds like a {b}you{/b} problem, just keep it down!!! I
-        don\u2019t want to hear you whining for eternity, cause that\u2019s how long
-        we have now\u2026"
+      value: 'Well that sounds like a {b}you{/b} problem, just keep it down!!! '
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408674, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.size
@@ -2781,7 +2799,7 @@ PrefabInstance:
       objectReference: {fileID: 1602641456}
     - target: {fileID: 3449208447053408680, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408680, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: nodeRect.x
@@ -2813,6 +2831,10 @@ PrefabInstance:
       objectReference: {fileID: 882224623}
     - target: {fileID: 3449208447053408680, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.data[5]
+      value: 
+      objectReference: {fileID: 882224692}
+    - target: {fileID: 3449208447053408680, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+      propertyPath: commandList.Array.data[6]
       value: 
       objectReference: {fileID: 882224622}
     - target: {fileID: 3449208447053408682, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
@@ -5282,7 +5304,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &882224686
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5299,7 +5321,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &882224687
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5316,7 +5338,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &882224688
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5350,7 +5372,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &882224690
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5377,7 +5399,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882224691
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5394,6 +5416,34 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &882224692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882224612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  storyText: "I don\u2019t want to hear you whining for eternity, cause that\u2019s
+    how long we have now\u2026"
+  description: 
+  character: {fileID: 1602641454}
+  portrait: {fileID: 21300000, guid: 5eb932da1747ed34cb5d79a741bbc244, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7810,7 +7860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269681321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.69, y: -9.639998, z: -1.1801286}
+  m_LocalPosition: {x: -23.81, y: -9.639998, z: -1.1801286}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 517964838}
@@ -9004,7 +9054,7 @@ PrefabInstance:
     - target: {fileID: 7916907733134431865, guid: 37f856d61049bd442aeb433895f9205b, type: 3}
       propertyPath: soundEffect
       value: 
-      objectReference: {fileID: 8300000, guid: 1a1543b7873994f51911c9766dd6d83f, type: 3}
+      objectReference: {fileID: 8300000, guid: 65d0a85ff8c8df04d91e1f45ed4b1472, type: 3}
     - target: {fileID: 7916907733148036168, guid: 37f856d61049bd442aeb433895f9205b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2206774
