@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 3449208447053408682, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+  selectedFlowchart: {fileID: 1217383483073517464, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
 --- !u!4 &520201845
 Transform:
   m_ObjectHideFlags: 1
@@ -939,6 +939,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+--- !u!1001 &6429712372398283593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664566113960901751, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091713102963758482, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
+      propertyPath: m_Name
+      value: Level02_Flowchart
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1b69a12d6bdfb642979ae571ecf961f, type: 3}
 --- !u!1001 &7916907732228072606
 PrefabInstance:
   m_ObjectHideFlags: 0
