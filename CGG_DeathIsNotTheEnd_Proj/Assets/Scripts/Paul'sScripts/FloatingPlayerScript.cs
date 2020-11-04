@@ -7,11 +7,14 @@ public class FloatingPlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 MovementV;
     public float speed = 10;
+
+    public FloatingPlayerScript floatingP;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        floatingP = GetComponent<FloatingPlayerScript>();
     }
 
     // Update is called once per frame
@@ -27,5 +30,17 @@ public class FloatingPlayerScript : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + MovementV * Time.fixedDeltaTime);
+    }
+
+    public void PauseCharacter()
+    {
+        floatingP.enabled = false;
+        Debug.Log("Player has stopped moving");
+    }
+
+    public void MoveCharacter()
+    {
+        floatingP.enabled = true;
+        Debug.Log("Player has continued moving");
     }
 }
