@@ -9,7 +9,7 @@ public class SettingsMenu : MonoBehaviour
 {
     public GameObject SettingsScreen;
 
-    //public AudioMixer audioMixer;
+    public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;
 
@@ -43,7 +43,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetVolume (float volume)
     {
-        //audioMixer.setFloat("Volume", volume)
+        audioMixer.SetFloat("volume", volume);
     }
 
     public void SetQuality (int qualityIndex)
