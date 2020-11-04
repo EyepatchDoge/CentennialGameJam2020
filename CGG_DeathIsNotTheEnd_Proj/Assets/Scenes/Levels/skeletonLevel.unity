@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abca96c11c6e7174686d87c9e35e8537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGhost: 0
+  facingLeft: 0
   speed: 8
   jumpForce: 8
   gCRadious: 0.09
