@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
     public GameObject SettingsScreen;
     public void PlayGameButton()
     {
-        SceneManager.LoadScene("PaulScene");
+        SceneManager.LoadScene("GhostLevel");
     }
 
     public void OptionsButton()
