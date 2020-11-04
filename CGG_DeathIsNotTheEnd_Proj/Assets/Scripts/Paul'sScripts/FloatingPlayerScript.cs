@@ -7,6 +7,7 @@ public class FloatingPlayerScript : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 MovementV;
     public float speed = 10;
+    bool facingLeft;
 
     public FloatingPlayerScript floatingP;
 
@@ -23,8 +24,20 @@ public class FloatingPlayerScript : MonoBehaviour
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         MovementV = moveInput.normalized * speed;
 
-        //rb.MovePosition(rb.position + MovementV * Time.deltaTime);
+        if (MovementV.x > 0.0f)
+        {
+            if (facingLeft) Flip();
+        }
+        else if (MovementV.x < 0.0f)
+        {
+            if (!facingLeft) Flip();
+        }
+    }
 
+    public void Flip()
+    {
+        facingLeft = !facingLeft;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     private void FixedUpdate()

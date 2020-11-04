@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     //public Animator animator;
-    public bool isGhost;
+    public bool facingLeft;
     public float speed, jumpForce = 50, gCRadious;
     public Transform GroundPos;
     public LayerMask Groundz;
@@ -48,7 +48,21 @@ public class PlayerScript : MonoBehaviour
         //    animator.SetBool("isMoving", true);
         //}
 
+        if(x > 0.4f)
+        {
+            if (facingLeft) Flip();
+        }
+        else if(x < 0.4f)
+        {
+            if (!facingLeft) Flip();
+        }
 
+    }
+
+    public void Flip()
+    {
+        facingLeft = !facingLeft;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     private void Running(Vector2 dir)
