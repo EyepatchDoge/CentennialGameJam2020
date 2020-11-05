@@ -1789,7 +1789,7 @@ GameObject:
   - component: {fileID: 752352292}
   - component: {fileID: 752352293}
   m_Layer: 4
-  m_Name: PlayerSprite
+  m_Name: Ghost
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1968,7 +1968,7 @@ Animator:
   m_GameObject: {fileID: 752352285}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3eae106cba1f42d489357c6bc5d741dd, type: 2}
+  m_Controller: {fileID: 9100000, guid: d592da4b1ffe3bd4d90942adedcaee78, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
