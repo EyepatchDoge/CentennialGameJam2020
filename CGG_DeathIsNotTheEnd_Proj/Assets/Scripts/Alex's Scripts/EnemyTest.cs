@@ -13,6 +13,7 @@ public class EnemyTest : MonoBehaviour
     public float attackRange;
     public float moveSpeed;
     Rigidbody2D rb;
+    public Animator animator;
 
     void Start()
     {
@@ -35,6 +36,19 @@ public class EnemyTest : MonoBehaviour
         {
             moveToOriginalPosition();
         }
+
+        if(animator != null)
+        {
+            if(rb.velocity.x > 0.0f)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
+        }
+
     }
 
     void moveToOriginalPosition()
@@ -67,6 +81,10 @@ public class EnemyTest : MonoBehaviour
 
     void attackPlayer()
     {
-        //cause damage?
+        if(animator != null)
+        {
+            animator.SetTrigger("Attack");
+
+        }
     }
 }
