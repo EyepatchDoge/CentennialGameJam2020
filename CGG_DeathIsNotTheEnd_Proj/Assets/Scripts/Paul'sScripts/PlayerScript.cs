@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rb;
-    //public Animator animator;
+    public Animator animator;
     public bool facingLeft;
     public float speed, jumpForce = 50, gCRadious;
     public Transform GroundPos;
@@ -29,7 +29,7 @@ public class PlayerScript : MonoBehaviour
         Running(dir);
 
         Collider2D isGrounded = Physics2D.OverlapCircle(GroundPos.position, gCRadious, Groundz);
-        //animator.SetBool("Grounded", isGrounded);
+        
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -39,20 +39,26 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        //if (dir.x == 0f)
-        //{
-        //    animator.SetBool("isMoving", false);
-        //}
-        //else
-        //{
-        //    animator.SetBool("isMoving", true);
-        //}
+        if(animator != null)
+        {
+            if (dir.x == 0f)
+            {
+                animator.SetBool("isMoving", false);
+            }
+            else
+            {
+                animator.SetBool("isMoving", true);
+            }
 
-        if(x > 0.4f)
+            animator.SetBool("Grounded", isGrounded);
+        }
+
+
+        if (dir.x > 0.0f)
         {
             if (facingLeft) Flip();
         }
-        else if(x < 0.4f)
+        else if(dir.x < 0.0f)
         {
             if (!facingLeft) Flip();
         }
