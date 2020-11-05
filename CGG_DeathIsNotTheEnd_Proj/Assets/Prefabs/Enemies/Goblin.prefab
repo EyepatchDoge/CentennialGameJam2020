@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395122590151603388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.35, y: -1.79, z: -506.642}
+  m_LocalPosition: {x: 6.35, y: -1.79, z: 1}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 5225088494424968389}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3022006520901255339, guid: cc83845261ede5140944b64fc7df99d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   agroRange: 10
   attackRange: 2.1
   moveSpeed: 5
-  animator: {fileID: 0}
+  animator: {fileID: 2802715603384500440}
 --- !u!95 &2802715603384500440
 Animator:
   serializedVersion: 3
