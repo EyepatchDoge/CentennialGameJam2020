@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/skeletonLevel.unity
     guid: 2859d5b0a23434149a7fbd3df9e0e50c
+  - enabled: 1
+    path: Assets/Scenes/Levels/ZombieLevel.unity
+    guid: 5893aedad7099ab4e81f8a4caba2eb99
   m_configObjects: {}

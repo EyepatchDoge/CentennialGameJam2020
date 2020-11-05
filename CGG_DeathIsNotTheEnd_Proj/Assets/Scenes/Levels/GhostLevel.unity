@@ -1189,7 +1189,7 @@ Transform:
   - {fileID: 1759041296}
   - {fileID: 1580320480}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &517964837
 GameObject:
@@ -1233,7 +1233,7 @@ Transform:
   - {fileID: 760762422}
   - {fileID: 1830161811}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555851379
 GameObject:
@@ -2191,7 +2191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &725512179
 GameObject:
@@ -2621,7 +2621,7 @@ Transform:
   - {fileID: 752352289}
   - {fileID: 1169730826}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860906845
 GameObject:
@@ -2716,7 +2716,7 @@ RectTransform:
   - {fileID: 1119792543}
   - {fileID: 1042750993}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2957,7 +2957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.size
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.data[1]
@@ -2974,7 +2974,7 @@ PrefabInstance:
     - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.data[4]
       value: 
-      objectReference: {fileID: 882224723}
+      objectReference: {fileID: 882224726}
     - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.data[5]
       value: 
@@ -3037,6 +3037,10 @@ PrefabInstance:
       objectReference: {fileID: 882224613}
     - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: commandList.Array.data[16]
+      value: 
+      objectReference: {fileID: 882224723}
+    - target: {fileID: 3449208447053408585, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+      propertyPath: commandList.Array.data[17]
       value: 
       objectReference: {fileID: 882224720}
     - target: {fileID: 3449208447053408586, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
@@ -3720,7 +3724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408687, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3449208447053408687, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7176,10 +7180,10 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1169730825}
+    gameObjectVal: {fileID: 1119792542}
   activeState:
     booleanRef: {fileID: 0}
-    booleanVal: 1
+    booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &882224724
 MonoBehaviour:
@@ -7219,6 +7223,27 @@ MonoBehaviour:
   targetObject: {fileID: 1169730825}
   methodName: StopPlayer
   delay: 0
+--- !u!114 &882224726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882224612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1169730825}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!4 &941346350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3269100721067357932, guid: 411bfcc71070f5f49bae437e00d973e4, type: 3}
@@ -10242,7 +10267,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551804745
 GameObject:
@@ -11211,7 +11236,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1756315740
 GameObject:
@@ -12606,7 +12631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040581939
 MonoBehaviour:

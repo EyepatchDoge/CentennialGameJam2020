@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float speed, jumpForce = 50, gCRadious;
     public Transform GroundPos;
     public LayerMask Groundz;
+
     public PlayerScript pScript;
 
     public void Start()
