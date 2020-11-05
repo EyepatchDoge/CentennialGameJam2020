@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: High Priestess
+  nameText: High Priestess Mindy Kazpa
   nameColor: {r: 0, g: 0.6904665, b: 0.7735849, a: 1}
   soundEffect: {fileID: 8300000, guid: 17b733e046f2f764fbd2108eec9166fd, type: 3}
   portraits:
@@ -282,8 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: MC
-  nameColor: {r: 0.8490566, g: 0.6737515, b: 0.11614456, a: 1}
+  nameText: Alex Dennis Lumberjoe
+  nameColor: {r: 0.4528302, g: 0.004434024, b: 0, a: 1}
   soundEffect: {fileID: 8300000, guid: 9c2734dd12fd0c8459f80b0303609035, type: 3}
   portraits: []
   portraitsFace: 0
