@@ -10,11 +10,12 @@ public class PlayerScript : MonoBehaviour
     public float speed, jumpForce = 50, gCRadious;
     public Transform GroundPos;
     public LayerMask Groundz;
+    public PlayerScript pScript;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        pScript = GetComponent<PlayerScript>();
     }
 
     public void Update()
@@ -82,4 +83,17 @@ public class PlayerScript : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(GroundPos.position, gCRadious);
     }
+
+    public void StopPlayer()
+    {
+        pScript.enabled = false;
+        Debug.Log("Player has stopped moving");
+    }
+
+    public void MovePlayer()
+    {
+        pScript.enabled = true;
+        Debug.Log("Player has continued moving");
+    }
+
 }

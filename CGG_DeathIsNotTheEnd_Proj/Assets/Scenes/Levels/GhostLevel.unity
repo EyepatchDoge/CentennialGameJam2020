@@ -2592,6 +2592,7 @@ MonoBehaviour:
   Groundz:
     serializedVersion: 2
     m_Bits: 1
+  pScript: {fileID: 0}
 --- !u!114 &752352291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3974,6 +3975,17 @@ PrefabInstance:
     - {fileID: 3449208447053408639, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
     - {fileID: 3449208447053408592, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+--- !u!114 &882224611 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3449208447053408682, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
+  m_PrefabInstance: {fileID: 882224610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882224612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &882224612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3449208447053408683, guid: bfaa099cc585c1849b2a7d6664e8d462, type: 3}
@@ -6504,7 +6516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &882224694
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6747,7 +6759,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882224710
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6823,7 +6835,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 502.45242
     y: 81.384605
-    width: 81.648346
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6844,7 +6856,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &882224714
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6858,7 +6870,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &882224715
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6872,7 +6884,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &882224716
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7024,7 +7036,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &882224717
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7267,7 +7279,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &882224718
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7282,7 +7294,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &882224719
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7309,7 +7321,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882224720
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7330,7 +7342,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &882224721
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7358,7 +7370,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882224722
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7385,7 +7397,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882224723
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7406,7 +7418,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &882224724
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8751,13 +8763,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 20.48}
-    newSize: {x: 93.2, y: 863.5}
+    newSize: {x: 145.7, y: 863.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 90.4, y: 863.39}
+  m_Size: {x: 140.5, y: 863.39}
   m_EdgeRadius: 0
 --- !u!212 &1123701100
 SpriteRenderer:
@@ -8804,7 +8816,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 93.2, y: 863.5}
+  m_Size: {x: 145.7, y: 863.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8818,7 +8830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123701098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.5, y: -4.6202526, z: -1.1801286}
+  m_LocalPosition: {x: 68.3, y: -5.8, z: -1.1801286}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 517964838}
@@ -10579,7 +10591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 3732400545327155164, guid: c2065e9339aae0b4eb43b343bfe40e68, type: 3}
+  selectedFlowchart: {fileID: 882224611}
 --- !u!4 &1534760732
 Transform:
   m_ObjectHideFlags: 1
@@ -12998,7 +13010,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.112
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
