@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9060895918704404442, guid: 88f9df7264e076540972c7aaf682ab1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fce45fa7ead8bfd4cbfe4a371ce9b3ec, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f9df7264e076540972c7aaf682ab1c, type: 3}
 --- !u!1001 &1163934077
@@ -381,6 +385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3500375522979855832, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fce45fa7ead8bfd4cbfe4a371ce9b3ec, type: 3}
     - target: {fileID: 3500375523203520265, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
       propertyPath: m_Name
       value: Main Menu
@@ -473,6 +481,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3500375523251517159, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fce45fa7ead8bfd4cbfe4a371ce9b3ec, type: 3}
     - target: {fileID: 3500375523735259623, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
       propertyPath: m_Name
       value: BG Image
@@ -501,6 +513,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SceneController, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3500375524141946645, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500375524141946645, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GhostLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500375524182081121, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fce45fa7ead8bfd4cbfe4a371ce9b3ec, type: 3}
+    - target: {fileID: 3500375524883556064, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: fce45fa7ead8bfd4cbfe4a371ce9b3ec, type: 3}
     - target: {fileID: 3500375524911344993, guid: 82b7757fd85860e49ae43376751b214e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

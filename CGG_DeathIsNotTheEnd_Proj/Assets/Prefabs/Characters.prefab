@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Necromancer
   nameColor: {r: 1, g: 0, b: 0, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 8cdac5134bfd2364cb25a7996aeecf2c, type: 3}
   portraits:
   - {fileID: 21300000, guid: 40275d26ae90cbb4bb01e03d68df0245, type: 3}
   portraitsFace: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: High Priestess
   nameColor: {r: 0, g: 0.6904665, b: 0.7735849, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 17b733e046f2f764fbd2108eec9166fd, type: 3}
   portraits:
   - {fileID: 21300000, guid: f71bfa1f438b82e47a7c397e7e980b43, type: 3}
   portraitsFace: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Witch
   nameColor: {r: 0.27897266, g: 0, b: 0.7169812, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
   portraits:
   - {fileID: 21300000, guid: 8a570e58ffb0ed34287c539506be5e03, type: 3}
   portraitsFace: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: Ghost
   nameColor: {r: 0.007624984, g: 0.5, b: 0, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: bde8af40d9ee7ec43bc9ff70ef850ea8, type: 3}
   portraits:
   - {fileID: 21300000, guid: 5eb932da1747ed34cb5d79a741bbc244, type: 3}
   portraitsFace: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: MC
   nameColor: {r: 0.8490566, g: 0.6737515, b: 0.11614456, a: 1}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 9c2734dd12fd0c8459f80b0303609035, type: 3}
   portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 0}
