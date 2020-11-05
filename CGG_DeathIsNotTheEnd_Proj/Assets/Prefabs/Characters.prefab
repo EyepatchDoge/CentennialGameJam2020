@@ -51,6 +51,57 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
+--- !u!1 &1832972667582153253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4210176143734711472}
+  - component: {fileID: 7529881238778972439}
+  m_Layer: 0
+  m_Name: Priestess_NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4210176143734711472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832972667582153253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.2206774, y: -6.527772, z: 3.5822747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7916907733148036168}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7529881238778972439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832972667582153253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: High Priestess
+  nameColor: {r: 0, g: 0.6904665, b: 0.7735849, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: f71bfa1f438b82e47a7c397e7e980b43, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
 --- !u!1 &7916907732881438994
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Ghost
-  nameColor: {r: 0.25, g: 0.861988, b: 1, a: 1}
+  nameColor: {r: 0.007624984, g: 0.5, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 5eb932da1747ed34cb5d79a741bbc244, type: 3}
@@ -184,6 +235,7 @@ Transform:
   - {fileID: 7916907732881438995}
   - {fileID: 7916907733134431864}
   - {fileID: 3094538781712796541}
+  - {fileID: 4210176143734711472}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -231,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: MC
-  nameColor: {r: 0.6415094, g: 0.5533054, b: 0.09380562, a: 1}
+  nameColor: {r: 0.8490566, g: 0.6737515, b: 0.11614456, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
