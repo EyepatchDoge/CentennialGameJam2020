@@ -199,6 +199,7 @@ MonoBehaviour:
   Groundz:
     serializedVersion: 2
     m_Bits: 1
+  canMove: 0
   pScript: {fileID: 87435722}
 --- !u!61 &87435723
 BoxCollider2D:
@@ -288,7 +289,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 3729801255641538141, guid: bfc23612567e95540b583791ae51d622, type: 3}
-  m_Color: {r: 0.5924706, g: 0.93527275, b: 0.990566, a: 1}
+  m_Color: {r: 0.6556604, g: 0.94936186, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -409,6 +410,7 @@ GameObject:
   - component: {fileID: 327810346}
   - component: {fileID: 327810345}
   - component: {fileID: 327810348}
+  - component: {fileID: 327810349}
   m_Layer: 0
   m_Name: FinalLevel_Flowchart
   m_TagString: Untagged
@@ -447,7 +449,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 68.82353
-    width: 75.88235
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -459,6 +461,7 @@ MonoBehaviour:
   - {fileID: 327810343}
   - {fileID: 327810335}
   - {fileID: 327810334}
+  - {fileID: 327810349}
   - {fileID: 327810333}
   - {fileID: 327810344}
   suppressAllAutoSelections: 0
@@ -489,7 +492,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 327810336}
   selectedCommands:
-  - {fileID: 327810348}
+  - {fileID: 327810341}
   variables: []
   description: 
   stepPause: 0
@@ -529,7 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: And to not pee on snake nests.
+  storyText: 
   description: 
   character: {fileID: 138408325}
   portrait: {fileID: 0}
@@ -556,7 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: 'If there is one thing I learned, its that there is life after death. '
+  storyText: If there is one thing I learned, it's to not pee on a snake's nests.
   description: 
   character: {fileID: 138408325}
   portrait: {fileID: 0}
@@ -612,7 +615,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 441
     y: 86
-    width: 84.117645
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -641,7 +644,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 221
     y: 93.17647
-    width: 104.11764
+    width: 64.11764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -863,6 +866,33 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &327810349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327810328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  storyText: 'Also that there is a life after death. {wi} And those people are cranky. '
+  description: 
+  character: {fileID: 138408325}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &375699820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -873,6 +903,10 @@ PrefabInstance:
     - target: {fileID: 6563717837810212555, guid: c343762f6212df54a8c3f597add8d72a, type: 3}
       propertyPath: m_Name
       value: SayDialog_USETHIS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563717837810212555, guid: c343762f6212df54a8c3f597add8d72a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6563717837810212565, guid: c343762f6212df54a8c3f597add8d72a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1498,8 +1532,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Made By:\nPaul C, Kasper C, Alex , Ethan CM, \nCynthia C , Jaedyn M, Gabriel
-    L"
+  m_Text: "Made By:\nPaul C, Kasper C, Alex B, Ethan CM, \nCynthia C , Jaedyn M,
+    Gabriel L"
 --- !u!222 &1612626041
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2708,3 +2742,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3035587001685952985}
   m_CullTransparentMesh: 0
+--- !u!1 &8551280089703346002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8551280089703346004}
+  - component: {fileID: 8551280089703346005}
+  m_Layer: 0
+  m_Name: Background_Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8551280089703346004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551280089703346002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8806319, y: -0.89096063, z: -10.41888}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8551280089703346005
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551280089703346002}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4b3be0556e18be14c81e57a6e393ba2f, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 43e6de020cdca6c42b659a6e9af80233, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.112
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

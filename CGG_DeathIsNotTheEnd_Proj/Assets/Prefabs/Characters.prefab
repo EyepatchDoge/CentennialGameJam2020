@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: High Priestess Mindy Kazpa
-  nameColor: {r: 0, g: 0.6904665, b: 0.7735849, a: 1}
+  nameColor: {r: 0, g: 0.13190445, b: 0.8018868, a: 1}
   soundEffect: {fileID: 8300000, guid: 17b733e046f2f764fbd2108eec9166fd, type: 3}
   portraits:
   - {fileID: 21300000, guid: f71bfa1f438b82e47a7c397e7e980b43, type: 3}
