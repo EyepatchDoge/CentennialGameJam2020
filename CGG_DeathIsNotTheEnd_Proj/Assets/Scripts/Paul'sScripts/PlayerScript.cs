@@ -10,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public float speed, jumpForce = 50, gCRadious;
     public Transform GroundPos;
     public LayerMask Groundz;
+    public bool canMove;
 
     public PlayerScript pScript;
 
@@ -17,53 +18,64 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         pScript = GetComponent<PlayerScript>();
+        canMove = true;
     }
 
     public void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
-        float xRaw = Input.GetAxisRaw("Horizontal");
-        float yRaw = Input.GetAxisRaw("Vertical");
-
-        Vector2 dir = new Vector2(x, y);
-
-        Running(dir);
-
-        Collider2D isGrounded = Physics2D.OverlapCircle(GroundPos.position, gCRadious, Groundz);
-        
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if(canMove == true)
         {
-            rb.velocity = new Vector2(rb.velocity.y, 0);
-            rb.velocity += Vector2.up * jumpForce;
-            //animator.SetTrigger("Jump");
+            Collider2D isGrounded = Physics2D.OverlapCircle(GroundPos.position, gCRadious, Groundz);
 
-        }
+            float x = Input.GetAxis("Horizontal");
+            float y = Input.GetAxis("Vertical");
+            float xRaw = Input.GetAxisRaw("Horizontal");
+            float yRaw = Input.GetAxisRaw("Vertical");
 
-        if(animator != null)
-        {
-            if (dir.x == 0f)
+            Vector2 dir = new Vector2(x, y);
+
+            Running(dir);
+
+            if (animator != null)
             {
-                animator.SetBool("isMoving", false);
-            }
-            else
-            {
-                animator.SetBool("isMoving", true);
+                if (dir.x == 0f)
+                {
+                    animator.SetBool("isMoving", false);
+                }
+                else
+                {
+                    animator.SetBool("isMoving", true);
+                }
+
+                animator.SetBool("Grounded", isGrounded);
             }
 
-            animator.SetBool("Grounded", isGrounded);
+
+            if (dir.x > 0.0f)
+            {
+                if (facingLeft) Flip();
+            }
+            else if (dir.x < 0.0f)
+            {
+                if (!facingLeft) Flip();
+            }
+
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.y, 0);
+                rb.velocity += Vector2.up * jumpForce;
+                //animator.SetTrigger("Jump");
+
+            }
+            
         }
 
+        else if(canMove == false)
+        {
+            rb.velocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+        }
 
-        if (dir.x > 0.0f)
-        {
-            if (facingLeft) Flip();
-        }
-        else if(dir.x < 0.0f)
-        {
-            if (!facingLeft) Flip();
-        }
 
     }
 
@@ -87,13 +99,15 @@ public class PlayerScript : MonoBehaviour
 
     public void StopPlayer()
     {
-        pScript.enabled = false;
+        //pScript.enabled = false;
+        canMove = false;
         Debug.Log("Player has stopped moving");
     }
 
     public void MovePlayer()
     {
-        pScript.enabled = true;
+        // pScript.enabled = true;
+        canMove = true;
         Debug.Log("Player has continued moving");
     }
 

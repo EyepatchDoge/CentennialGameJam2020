@@ -2773,6 +2773,7 @@ MonoBehaviour:
   Groundz:
     serializedVersion: 2
     m_Bits: 1
+  canMove: 0
   pScript: {fileID: 752352290}
 --- !u!114 &752352291
 MonoBehaviour:
@@ -6740,7 +6741,7 @@ PrefabInstance:
       objectReference: {fileID: 1635909965}
     - target: {fileID: 1250852572939157409, guid: c2065e9339aae0b4eb43b343bfe40e68, type: 3}
       propertyPath: nodeRect.x
-      value: 193.06383
+      value: 194.06383
       objectReference: {fileID: 0}
     - target: {fileID: 1250852572939157409, guid: c2065e9339aae0b4eb43b343bfe40e68, type: 3}
       propertyPath: nodeRect.y
@@ -7539,7 +7540,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.86923
     y: 352.19498
-    width: 93
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7574,7 +7575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 97.05673
     y: 266.25754
-    width: 83
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7652,7 +7653,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 87.70683
     y: 191.33997
-    width: 114
+    width: 74
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11804,6 +11805,7 @@ MonoBehaviour:
   Groundz:
     serializedVersion: 2
     m_Bits: 1
+  canMove: 0
   pScript: {fileID: 4528440160123566496}
 --- !u!61 &4528440160123566497
 BoxCollider2D:
@@ -11941,7 +11943,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 3729801255641538141, guid: bfc23612567e95540b583791ae51d622, type: 3}
-  m_Color: {r: 0.5924706, g: 0.93527275, b: 0.990566, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11972,7 +11974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4528440160831909090
 Transform:
   m_ObjectHideFlags: 0
